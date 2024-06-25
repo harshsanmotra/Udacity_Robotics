@@ -5,5 +5,5 @@ include_directories(${GAZEBO_INCLUDE_DIRS})
 link_directories(${GAZEBO_LIBRARY_DIRS})
 list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 
-add_library(helloo SHARED script/welcome_msg.cpp)
-target_link_libraries(helloo ${GAZEBO_LIBRARIES})
+add_library(welcome_msg SHARED script/welcome_msg.cpp)
+target_link_libraries(welcome_msg ${GAZEBO_LIBRARIES})

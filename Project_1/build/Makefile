@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named helloo
+# Target rules for targets named welcome_msg
 
 # Build rule for target.
-helloo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 helloo
-.PHONY : helloo
+welcome_msg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 welcome_msg
+.PHONY : welcome_msg
 
 # fast build rule for target.
-helloo/fast:
-	$(MAKE) -f CMakeFiles/helloo.dir/build.make CMakeFiles/helloo.dir/build
-.PHONY : helloo/fast
+welcome_msg/fast:
+	$(MAKE) -f CMakeFiles/welcome_msg.dir/build.make CMakeFiles/welcome_msg.dir/build
+.PHONY : welcome_msg/fast
 
 script/welcome_msg.o: script/welcome_msg.cpp.o
 
@@ -129,7 +129,7 @@ script/welcome_msg.o: script/welcome_msg.cpp.o
 
 # target to build an object file
 script/welcome_msg.cpp.o:
-	$(MAKE) -f CMakeFiles/helloo.dir/build.make CMakeFiles/helloo.dir/script/welcome_msg.cpp.o
+	$(MAKE) -f CMakeFiles/welcome_msg.dir/build.make CMakeFiles/welcome_msg.dir/script/welcome_msg.cpp.o
 .PHONY : script/welcome_msg.cpp.o
 
 script/welcome_msg.i: script/welcome_msg.cpp.i
@@ -138,7 +138,7 @@ script/welcome_msg.i: script/welcome_msg.cpp.i
 
 # target to preprocess a source file
 script/welcome_msg.cpp.i:
-	$(MAKE) -f CMakeFiles/helloo.dir/build.make CMakeFiles/helloo.dir/script/welcome_msg.cpp.i
+	$(MAKE) -f CMakeFiles/welcome_msg.dir/build.make CMakeFiles/welcome_msg.dir/script/welcome_msg.cpp.i
 .PHONY : script/welcome_msg.cpp.i
 
 script/welcome_msg.s: script/welcome_msg.cpp.s
@@ -147,7 +147,7 @@ script/welcome_msg.s: script/welcome_msg.cpp.s
 
 # target to generate assembly for a file
 script/welcome_msg.cpp.s:
-	$(MAKE) -f CMakeFiles/helloo.dir/build.make CMakeFiles/helloo.dir/script/welcome_msg.cpp.s
+	$(MAKE) -f CMakeFiles/welcome_msg.dir/build.make CMakeFiles/welcome_msg.dir/script/welcome_msg.cpp.s
 .PHONY : script/welcome_msg.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... helloo"
+	@echo "... welcome_msg"
 	@echo "... script/welcome_msg.o"
 	@echo "... script/welcome_msg.i"
 	@echo "... script/welcome_msg.s"
