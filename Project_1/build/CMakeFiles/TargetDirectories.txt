@@ -1,3 +1,0 @@
-/home/sanmotra/Udacity/Project_1/build/CMakeFiles/rebuild_cache.dir
-/home/sanmotra/Udacity/Project_1/build/CMakeFiles/edit_cache.dir
-/home/sanmotra/Udacity/Project_1/build/CMakeFiles/welcome_msg.dir
